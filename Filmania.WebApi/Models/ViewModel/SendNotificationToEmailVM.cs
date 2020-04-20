@@ -9,12 +9,12 @@ namespace Filmania.WebApi.Models.ViewModel
 {
     public class SendNotificationToEmailVM
     {
-        [JsonProperty("email")]
         [Required]
-        public string EmailAddress { get; set; }
+        [JsonProperty("emails")]
+        public List<string> EmailAddresses { get; set; }
 
-        [JsonProperty("body")]
         [Required]
+        [JsonProperty("body")]
         public string Body { get; set; }
     }
 }

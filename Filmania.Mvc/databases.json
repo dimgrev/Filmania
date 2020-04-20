@@ -1,0 +1,5 @@
+{
+  "ConnectionStrings": {
+    "Default": "Server=tcp:dimgrevus.database.windows.net,1433;Initial Catalog=FilmaniaDB;Persist Security Info=False;User ID=dimgrev;Password=77java&&;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
+  }
+}

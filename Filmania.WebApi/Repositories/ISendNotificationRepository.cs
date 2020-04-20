@@ -7,6 +7,6 @@ namespace Filmania.WebApi.Repositories
 {
     public interface ISendNotificationRepository
     {
-        Task SendNotificationAsync(string reciepientEndpoint, string body);
+        Task SendNotificationAsync(List<string> reciepientsList, string body);
     }
 }

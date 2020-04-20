@@ -12,7 +12,7 @@ namespace Filmania.WebApi.Repositories
         /// </summary>
         /// <param name="reciepientEndpoint"></param>
         /// <param name="body"></param>
-        public async Task SendNotificationAsync(string reciepientEndpoint, string body)
+        public Task SendNotificationAsync(List<string> reciepientsList, string body)
         {
             throw new NotImplementedException();
         }

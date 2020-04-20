@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading;
 using System.Threading.Tasks;
 using Filmania.WebApi.Models.ViewModel;
 using Filmania.WebApi.Repositories;
@@ -24,7 +25,7 @@ namespace Filmania.WebApi.Controllers
         [Route("SendEmail")]
         public async Task<IActionResult> SendEmailNotificationAsync([FromBody] SendNotificationToEmailVM inputData)
         {
-            await _sendEmailNotifRepo.SendNotificationAsync(inputData.EmailAddress, inputData.Body);
+            await _sendEmailNotifRepo.SendNotificationAsync(inputData.EmailAddresses, inputData.Body);
             return Ok();
         }
     }

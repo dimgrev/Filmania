@@ -1,0 +1,29 @@
+﻿@model List<Filmania.Mvc.Models.Db.Film>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Name
+            </th>
+            <th>
+                Description
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var film in Model)
+        {
+            <tr>
+                <td>
+                    @film.Title
+                </td>
+                <td>
+                    @film.Description
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+Hello All Films Here!
